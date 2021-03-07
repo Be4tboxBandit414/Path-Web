@@ -20,7 +20,7 @@ export default function Landing({ setNavTheme }) {
         Begins with a Single Step <br />- Lao Tzu
       </HeroText>
       <SubContainer>
-        <HeroButton>Begin Your Journey</HeroButton>
+        <HeroButton>Begin Your TEST</HeroButton>
         <HeroButton>Paths</HeroButton>
       </SubContainer>
       <HeroOverlay>
