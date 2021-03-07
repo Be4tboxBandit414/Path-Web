@@ -55,7 +55,7 @@ export const SocialMedia = styled.div`
 
 export const Inspiration = styled.div`
   position: absolute;
-  right: 15rem;
+  right: 25rem;
   top: 13rem;
   font-size: 25px;
   font-style: italic;

@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
 import {
   SubContainer,
   HeroImage,
@@ -21,9 +20,7 @@ export default function Landing({ setNavTheme }) {
         Begins with a Single Step <br />- Lao Tzu
       </HeroText>
       <SubContainer>
-        <Link to="/profile">
-          <HeroButton>Begin Your Journey</HeroButton>
-        </Link>
+        <HeroButton>Begin Your Journey</HeroButton>
         <HeroButton>Paths</HeroButton>
       </SubContainer>
       <HeroOverlay>

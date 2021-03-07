@@ -18,13 +18,13 @@ export const Title = styled.div`
   text-align: center;
   // color: #FFFFFF;
   font-family: "Anton", sans-serif;
-  margin-left: 45rem;
+  margin-left: 57rem;
   position: relative;
   bottom: 10px;
   font-family: "Lobster", cursive;
   text-decoration: none;
 `;
-export const NavLink = styled.a`
+export const NavLink = styled.span`
   text-decoration: none;
   font-size: 25px;
   margin-left: 12.5rem;
@@ -41,12 +41,15 @@ export const NavContainer = styled.div`
   position: absolute;
   top: 25px;
   color: white;
+  width: 100vw;
 `;
 
 export const DropDownContainer = styled.div`
   width: 10.5em;
   margin: 0 auto;
   cursor: pointer;
+  position: absolute;
+  z-index: 1;
 `;
 
 export const DropDownHeader = styled.div`

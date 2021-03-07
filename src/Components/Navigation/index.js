@@ -63,7 +63,10 @@ function Navigation() {
       </Link>
       <SubContainer>
         <NavLink onClick={() => console.log("About Nav")}>About Us</NavLink>
-        <NavLink>Sign In</NavLink>
+        <Link style={navStyles} to="/profile">
+          <NavLink>Sign In</NavLink>
+        </Link>
+
         <NavLink>Sign Up</NavLink>
       </SubContainer>
     </NavContainer>
