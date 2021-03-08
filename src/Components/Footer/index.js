@@ -1,12 +1,12 @@
 import { useContext } from "react";
 import { Container, LineBreak, SubContainer, FooterLink } from "./styles";
-import { ThemeContext } from "../../App";
+import { Context } from "../../Context";
 
 export default function Footer() {
-  const footerTheme = useContext(ThemeContext);
+  const [navTheme] = useContext(Context);
   const footerStyles = {
-    color: footerTheme === "profile" ? "black" : "white",
-    opacity: footerTheme === "profile" ? 1 : 0.5,
+    color: navTheme === "profile" ? "black" : "white",
+    opacity: navTheme === "profile" ? 1 : 0.5,
   };
   return (
     <>

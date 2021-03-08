@@ -1,4 +1,5 @@
-import { useEffect } from "react";
+import { useEffect, useContext } from "react";
+import { Context } from "../../Context";
 import {
   Container,
   FirstName,
@@ -14,7 +15,8 @@ import {
 } from "./styles";
 import ProfileImg from "../../assets/profile.jpg";
 
-export default function Profile({ setNavTheme }) {
+export default function Profile() {
+  const [navTheme, setNavTheme] = useContext(Context);
   useEffect(() => {
     setNavTheme("profile");
   }, [setNavTheme]);

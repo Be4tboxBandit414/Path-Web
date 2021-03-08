@@ -1,4 +1,5 @@
-import { useEffect } from "react";
+import { useEffect, useContext } from "react";
+import { Context } from "../../Context";
 import {
   SubContainer,
   HeroImage,
@@ -8,11 +9,12 @@ import {
 } from "./styles";
 import Hero from "../../assets/hero.jpg";
 
-export default function Landing({ setNavTheme }) {
+export default function Landing() {
+  const [navTheme, setNavTheme] = useContext(Context);
   useEffect(() => {
     setNavTheme("landing");
   }, [setNavTheme]);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+
   return (
     <>
       <HeroText>

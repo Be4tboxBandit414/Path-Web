@@ -1,5 +1,5 @@
 import { useState, useContext } from "react";
-import { ThemeContext } from "../../App";
+import { Context } from "../../Context";
 import {
   DropDownContainer,
   DropDownHeader,
@@ -17,7 +17,7 @@ import { Link } from "react-router-dom";
 import Search from "./Search/Serach";
 
 function Navigation() {
-  const navTheme = useContext(ThemeContext);
+  const [navTheme, setNavTheme] = useContext(Context);
   const navStyles = {
     color: navTheme === "profile" ? "black" : "white",
     opacity: navTheme === "profile" ? 1 : 0.5,
@@ -66,7 +66,6 @@ function Navigation() {
         <Link style={navStyles} to="/profile">
           <NavLink>Sign In</NavLink>
         </Link>
-
         <NavLink>Sign Up</NavLink>
       </SubContainer>
     </NavContainer>
